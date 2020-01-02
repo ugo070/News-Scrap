@@ -1,0 +1,36 @@
+{{#each articles}}
+<div class="card my-5">
+    <div class="card-header">
+        <h4 class="card-title"><a href="{{this.link}}">{{this.title}}</a></h4>
+    </div>
+    <div class="card-body">
+        <p class="card-text">{{this.snippet}}</p>
+    </div>
+    <div class="container comments">
+        {{#each comments}}
+        <div class="row">
+            <div class="col">
+                <h6>{{this.name}}</h6>
+            </div>
+            <div class="col">
+                <p>{{this.body}}</p>
+            </div>
+            <div class="col"><button type="button" class="btn btn-danger">Delete</button></div>
+        </div>
+        {{/each}}
+    </div>
+    <div class="container">
+        <form>
+            <div class="form-row">
+                <div class="col">
+                    <input class="name" type="text" placeholder="name" />
+                </div>
+                <div class="col">
+                    <input class="body" type="text" placeholder="comment" />
+                </div>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+</div>
+{{/each}};
