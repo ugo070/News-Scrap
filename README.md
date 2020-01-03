@@ -1,6 +1,6 @@
 # The Scrape
 
-Heroku Deployment: https://blooming-savannah-49090.herokuapp.com/
+Heroku Deployment: 
 
 ## Problem Summary
 
